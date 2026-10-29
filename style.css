@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: barlow;
+}
+@font-face {
+    font-family: 'barlow';
+    src: url(./Fonts/Barlow-Regular.ttf);
+}
+.container{
+    display: flex;
+    flex-direction: raw;
+    position: relative;
+    background-color: #EFF6FF;
+    width: 100%;
+    color:#2A4A5C;
+}
+.left{
+    position: relative;
+    width: 60%;
+    height: auto;
+    flex-shrink: 0;
+}
+.background{
+    display: flex;
+    position:relative;
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 200px;
+}
+.right{
+    width: 40%;
+    margin: 5%;
+}
+p{
+    padding: 2em 0;
+}
+.buttons{
+    display: flex;
+    gap: 3em;
+}
+.facebook{
+    display: flex;
+    background-color: #255A9B;
+    padding: 10px 50px 10px 10px;
+    color: #FFF;
+    font-size: 14px;
+}
+.linkedin{
+    display: flex;
+    background-color: #0076B6;
+    padding: 10px 50px 10px 10px;
+    color: #FFF;
+    font-size: 14px;
+}
+.logofb, .logoli{
+    margin: 0 15px 0 0;
+}
+h2{
+    border-bottom: 1px solid black;
+    line-height: 50%;
+    text-align: center;
+}
+h2 span{
+    background-color: #FFF;
+    padding: 0 10px;
+    position: relative;
+}
+.line-with-text{
+    padding: 20px 0;
+    font-size: 9px;
+}
+header{
+    text-align: center;
+    overflow: hidden;
+}
+h3{
+    display: inline-block;
+    position: relative;
+}
+h3::before,
+h3::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background-color: #a09c9c;
+}
+h3::before{
+    left: -500%;
+    right: 150%;
+}
+h3::after{
+    right: -500%;
+    left:150%;
+}
