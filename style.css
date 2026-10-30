@@ -8,17 +8,20 @@
     font-family: 'barlow';
     src: url(./Fonts/Barlow-Regular.ttf);
 }
+body{
+    padding: 50px;
+    background-color: #EFF6FF;
+}
 .container{
     display: flex;
-    flex-direction: raw;
     position: relative;
-    background-color: #EFF6FF;
+    background-color: white;
     width: 100%;
     color:#2A4A5C;
 }
 .left{
     position: relative;
-    width: 60%;
+    width: 50%;
     height: auto;
     flex-shrink: 0;
 }
@@ -34,15 +37,19 @@
     width: 200px;
 }
 .right{
-    width: 40%;
     margin: 5%;
 }
+h1{
+    color: #7B8A92;
+}
 p{
-    padding: 2em 0;
+    padding: 1em 0;
+    color: #96A5B1;
 }
 .buttons{
     display: flex;
     gap: 3em;
+    margin-top: 2em;
 }
 .facebook{
     display: flex;
@@ -89,7 +96,7 @@ h3::after{
     position: absolute;
     top: 50%;
     height: 1px;
-    background-color: #a09c9c;
+    background-color: #EEEEEE;
 }
 h3::before{
     left: -500%;
@@ -98,4 +105,36 @@ h3::before{
 h3::after{
     right: -500%;
     left:150%;
+}
+.inputs{
+    display: flex;
+    gap:3em;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-left: 2px solid transparent;
+    padding: 8px 12px;
+    outline: 1.5px solid #EEEEEE;
+    width: 230px;
+    color:#AFAFAF;
+    font-size: small;
+    margin-bottom: 2em;
+}
+.input-box input{
+    border:none;
+    outline: none;
+    background: transparent;
+}
+.input-box:focus-within{
+    border-left-color: blue;
+}
+h4{
+    font-size: 25px;
+    padding-bottom: 5px;
+    color: #96A5B1;
+}
+.type{
+
 }
