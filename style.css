@@ -37,7 +37,7 @@ body{
     width: 200px;
 }
 .right{
-    margin: 5%;
+    margin: 7%;
 }
 h1{
     color: #7B8A92;
@@ -133,6 +133,7 @@ h3::after{
 h4{
     font-size: 25px;
     padding-bottom: 5px;
+    margin-top: 20px;
     color: #96A5B1;
 }
 .radio-group{
@@ -140,6 +141,7 @@ h4{
     align-items: center;
     gap: 25px;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 .radio-option{
     display: flex;
@@ -200,4 +202,51 @@ h4{
 }
 .info:hover .tooltip{
     display: block;
+}
+.checkbox{
+    display: flex;
+    margin-top: 150px;
+}
+input[type=checkbox]{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #AFAFAF;
+    border-radius: 0;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(2px);
+}
+input[type=checkbox]:checked{
+    background-color:#3698FB;
+}
+input[type=checkbox]:checked::after{
+    content: "✓";
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: -3px;
+    left: 2px;
+}
+.checkbox label{
+    color: #AFAFAF;
+    margin: 0 10px;
+}
+.checkbox a{
+    color: #0076B6;
+}
+.create{
+    display: flex;
+    background-color: #3698FB;
+    color: #FFF;
+    font-size: 14px;
+    width: 220px;
+    height: 50px;
+    border: #3698FB 1px solid;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.1em;
 }
