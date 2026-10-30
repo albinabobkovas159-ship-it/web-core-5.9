@@ -3,83 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web-core-5.9</title>
+    <title>Get iintoo it today</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <div class="container">
+    <div class="container">
         <div class="left">
-            <img class="background" src="./Images/bg.jpg">
-            <div">
-                <img class="logo" src="./Images/logo.svg"> 
-            </div>
-        </div> -->
-            <div class="login">
-             <h1>Get iintoo it today</h1>
-                <p>There is no charge or obligation upon registration</p>
-                <button type="button" class="Facebook">Register with Facebook</button>
-                <button type="button" class="Linkedin">Register with LinkedIn</button>
-            <div class="line login">
-                <hr>
-                <span>OR</span>
-                <hr>
-            </div>
-            <div class="input">
-                <label for="email">Email</label>
-                <input id="email" type="email">
-                <label for="phone">Phone</label>
-                <input id="phone" type="tel">
-            </div>
-            <form>
-                <p>What type of investor are you?</p>
-                <p>Select the type of investor you are below.</p>
-                <label>
-                    <input type="radio" name="type" required>
-                Individual
-                </label>
-                <span class="info">
-                    ⓘ
-                <span class="tooltip">
-                    I am a natural person investing on my own behaif as a sole owner, joint tenant, or tenant in common.
-                </span>
-                </span>
-                <label>
-                    <input type="radio" name="type" required>
-                    Business
-                </label>
-                <span class="info">
-                    ⓘ
-                <span class="tooltip">
-                    I am a natural person investing on my own behaif as a sole owner, joint tenant, or tenant in common.
-                </span>
-                </span>
-                <label>
-                <input type="radio" name="type" required>
-                IRA
-                </label>
-                <span class="info">
-                    ⓘ
-                <span class="tooltip">
-                    I am a natural person investing on my own behaif as a sole owner, joint tenant, or tenant in common.
-                    </span>
-                    </span>
-                    <label>
-                    <input type="radio" name="type" required>
-                    Trust
-                    </label>
-                    <span class="info">
-                   ⓘ
-                    <span class="tooltip">
-                    I am a natural person investing on my own behaif as a sole owner, joint tenant, or tenant in common.
-                    </span>
-                </span>
-            </form>
-        <div>
-            <input type="checkbox" required>
-            I agree to the terms and receiving notifications from iintoo
-            <a href="https://www.google.co" target="_blank">View full terms</a>
+            <img class="background" src="./Images/bg.jpg" alt="***">
+            <img class="logo" src="./Images/logo.svg" alt="***">
         </div>
-        <button type="button" class="createacc">Create Account</button>
+        <div class="right">
+            <h1>Get iintoo it today</h1>
+            <p>There is no charge or obligation upon registration</p>
+            <div class="buttons">
+                <button type="button" class="facebook">
+                <img class="logofb" src="./Images/facebook.svg" alt="***" width="15px">
+                <span>Register with Facebook</span>
+                </button>
+                <button type="button" class="linkedin">
+                <img class="logoli" src="./Images/linkedin.svg" alt="***" width="15px">
+                <span>Register with LinkedIn</span>
+                </button>
+            </div>
+            <br><br>
+            <section>
+                <header>
+                    <h3>
+                        OR
+                    </h3>
+                </header>
+            </section>     
+            <br><br>  
+            <div class=inputs>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email">
+                </div>
+                <div class="input-box">
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="tel">
+                </div>
+            </div>
+            <div class="type">
+                <h4>What type of investor are you?</h4>
+                <p>Select the type of investor you are below.</p>
+            </div>
+           <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="individual" name="type" value="individual">
+                    <label for="individual">Individual</label>
+                    <div class="info">
+                        <span class="icon">i</span>
+                        <span class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</span>
+                    </div>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="business" name="type" value="business">
+                    <label for="business">Business</label>
+                    <div class="info">
+                        <span class="icon">i</span>
+                        <span class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</span>
+                    </div>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="iva" name="type" value="iva">
+                    <label for="iva">IVA</label>
+                    <div class="info">
+                        <span class="icon">i</span>
+                        <span class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</span>
+                    </div>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="trust" name="type" value="trust">
+                    <label for="trust">Trust</label>
+                    <div class="info">
+                        <span class="icon">i</span>
+                        <span class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</span>
+                    </div>
+                </div>
+           </div>
+           <div class="checkbox">
+                <input type="checkbox" id="check" name="check">
+                <label for="check">I agree to the terms and receiving notification from iintoo</label>
+                <a href="https://www.google.co" target="_blank">View full terms</a>
+           </div>
+           <br><br><br>
+            <div class="create">
+                <button type="button" class="create">
+                <span>Create account</span>
+                </button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
