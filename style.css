@@ -135,6 +135,69 @@ h4{
     padding-bottom: 5px;
     color: #96A5B1;
 }
-.type{
-
+.radio-group{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.radio-option{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.radio-option input{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1.5px solid #aaa;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.radio-option input:checked{
+    border: 3px solid #3698fb
+}
+.radio-option label{
+    cursor: pointer;
+    font-weight: bold;
+    color: #2A4A5C;
+    font-size: 16px;
+}
+.info{
+    position: relative;
+}
+.icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    color: #aaa;
+    font-size: 11px;
+    cursor:auto;
+}
+.tooltip{
+    display:none;
+    position: absolute;
+    top: calc(100%+5px);
+    left: 50%;
+    transform: translateY(10%);
+    transform: translateX(-40%);
+    background-color: white;
+    color: #AFAFAF;
+    padding: 8px 12px;
+    font-size: 14px;
+    width: max-content;
+    max-width: 270px;
+    white-space: normal;
+    z-index: 10;
+    margin-top: 20px;
+    border: 1px solid white;
+    box-shadow: 0 0 8px 8px rgb(243, 241, 241);
+}
+.info:hover .tooltip{
+    display: block;
 }
